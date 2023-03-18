@@ -18,13 +18,13 @@ If the input is an empty array or is null, return an empty array.
 
 # if empty [] return []
 
-input output
-[] []
-1 [1, 0]
--2 [nil, -2]
-0 [0, nil]
-1,2,3,4,5,6,7,8,9,10,-11,-12,-13,-14,-15 [ 10, -65]
-1, -1, 2, -2 [3, -3]
+<!-- input                                output
+[]                                          []
+1                                           [1, 0]
+-2                                          [nil, -2]
+0                                           [nil, nil]
+1,2,3,4,5,6,7,8,9,10,-11,-12,-13,-14,-15    [ 10, -65]
+1, -1, 2, -2                                [3, -3] -->
 
 Example
 
