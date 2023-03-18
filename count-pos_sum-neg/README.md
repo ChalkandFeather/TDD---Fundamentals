@@ -20,7 +20,7 @@ If the input is an empty array or is null, return an empty array.
 
 <!-- input                                output
 []                                          []
-1                                           [1, 0]
+1                                           [1, nil]
 -2                                          [nil, -2]
 0                                           [nil, nil]
 1,2,3,4,5,6,7,8,9,10,-11,-12,-13,-14,-15    [ 10, -65]
