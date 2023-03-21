@@ -28,3 +28,13 @@ gem install bundler
 bundle init
 
 git repo : https://github.com/ChalkandFeather/TDD---Fundamentals.git
+
+input output
+
+10,20,30
+
+# test
+
+is frequency present?
+
+frequency range
