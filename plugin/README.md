@@ -14,4 +14,17 @@ will it be taken a variable frequnecy or single tone - therefore only triggering
 will sound pressure levels effect the behaviour of the plug in?
 
 input | output
-silence
+no i/p no o/p
+
+# Program requirements
+
+- Language: Ruby
+- Testing: RSpec
+
+CLI Setup
+rvm get stable
+rvm use ruby --latest --install -- default
+gem install bundler
+bundle init
+
+git repo : https://github.com/ChalkandFeather/TDD---Fundamentals.git
