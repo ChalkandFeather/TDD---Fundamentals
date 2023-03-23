@@ -1,6 +1,6 @@
-    def band_pass_filter(signal, lower_limit, upper_limit)
-     raise ArgumentError, "please input a signal to trigger response" if signal.empty?
-      
+    def band_pass_filter(signal, lower_limit = 40, upper_limit = 1000)
+     raise ArgumentError, "signal must be a non-empty array" if signal.empty?
+    
      by_passed = []
 
       signal.each do |frequency| 
