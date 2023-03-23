@@ -10,15 +10,15 @@ RSpec.describe 'band pass filter' do
       expect(band_pass_filter([], 35, 110)).to eq("please input a signal to trigger response")
     end
 
-    it " signal passes and lower limit is triggered, raising  frequency to limit" do
-    expect(band_pass_filter([50], 35, 110)).to eq([50])
+    it " single signal passes through filter without triggering filter limits" do
+    expect(band_pass_filter([50], 40, 1000)).to eq([50])
     end
 
-    it 'signal passes through filter without triggering filter limits' do
-      expect(band_pass_filter([25, 30, 70], 10, 80)).to eq([25, 30, 70])
+    it 'range of freequencies in signal pass through filter without triggering filter limits' do
+      expect(band_pass_filter([40, 50, 70], 40, 1000)).to eq([40, 50, 70])
       end
 
       it " signal passes and lower limit is triggered, raising  frequency to limit" do
-        expect(band_pass_filter([30, 50, 100], 35, 110)).to eq([35, 50, 100])
+        expect(band_pass_filter([30, 50, 100], 40, 1000)).to eq([40, 50, 100])
       end
   end
