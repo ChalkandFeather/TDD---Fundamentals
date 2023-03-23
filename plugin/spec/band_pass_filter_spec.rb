@@ -29,4 +29,8 @@ RSpec.describe 'band pass filter' do
       it " single signal passes and upper limit is triggered,reducing frequency to limit" do
         expect(band_pass_filter([1100], 40, 1000)).to eq([1000])
       end
+
+      it "range of freequency signal passes and upper limit is triggered,reducing frequency to limit" do
+        expect(band_pass_filter([40, 500, 1100], 40, 1000)).to eq([40, 500, 1000])
+      end
   end
