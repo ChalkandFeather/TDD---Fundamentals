@@ -36,5 +36,9 @@ input output
 # test
 
 is frequency present?
+initial tests with arguements set at default limit.
+
+a default lower limit of 40 will be set unless specified otherwise
+a default upper limit of 1000 will be used unless specified otherwise
 
 frequency range

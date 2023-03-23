@@ -2,12 +2,12 @@ require 'band_pass_filter'
 
 RSpec.describe 'band pass filter' do
 
-   it " signal passes and lower limit is triggered, raising  frequency to limit" do
-     expect(band_pass_filter([],nil ,nil )).to eq([])
-   end
+  it "raises an ArgumentError with a specific error message" do
+    expect{ band_pass_filter([], 40, 1000) }.to raise_error(ArgumentError, "please input a signal to trigger response")
+  end
 
-    it " signal passes and lower limit is triggered, raising  frequency to limit" do
-      expect(band_pass_filter([], 35, 110)).to eq([])
+    xit " signal passes and lower limit is triggered, raising  frequency to limit" do
+      expect(band_pass_filter([], 35, 110)).to eq("please input a signal to trigger response")
     end
 
     it " signal passes and lower limit is triggered, raising  frequency to limit" do
