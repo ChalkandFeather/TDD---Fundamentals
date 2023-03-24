@@ -1,7 +1,5 @@
   def band_pass_filter(signal, lower_limit, upper_limit)
     raise ArgumentError, "signal must be a non-empty array" if signal.empty?
- 
-    by_passed = []
   
     signal.map do |frequency| 
       if frequency < lower_limit

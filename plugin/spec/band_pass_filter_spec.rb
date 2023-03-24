@@ -10,6 +10,14 @@ RSpec.describe 'band pass filter' do
     expect(band_pass_filter([50], 40, 1000)).to eq([50])
     end
 
+    it " signal within range and no variations passes through filter without triggering filter limits" do
+      expect(band_pass_filter([40, 40, 40], 40, 1000)).to eq([40, 40, 40])
+      end
+
+      it " signal below lower limit and no variations passes through filter and raises signal equally" do
+        expect(band_pass_filter([20, 20, 20], 40, 1000)).to eq([40, 40, 40])
+        end
+
     it 'range of freequencies in signal pass through filter without triggering filter limits' do
       expect(band_pass_filter([40, 50, 70], 40, 1000)).to eq([40, 50, 70])
       end
