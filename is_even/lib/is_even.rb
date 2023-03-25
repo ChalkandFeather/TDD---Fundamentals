@@ -1,4 +1,10 @@
 def is_even(n=nil)
-  return n.nil? ? nil : (n % 2 == 0)
-    return true
+    if n.nil?
+      return nil
+    elsif n == 0
+      return false
+    else 
+      return n % 2 == 0
+    end
   end
+  
