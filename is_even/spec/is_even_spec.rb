@@ -39,6 +39,11 @@ end
     expect(is_even(-2.0)).to eq(true)
   end
 
+  it 'returns false if (n) negative even' do
+    expect(is_even(-2.1)).to eq(false)
+end
+
+
 end
 
 
