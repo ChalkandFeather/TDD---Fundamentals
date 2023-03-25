@@ -23,9 +23,14 @@ RSpec.describe 'is_even' do
     expect(is_even(3)).to eq(false)
 end
 
-it 'returns false if (n) is zero' do
-  expect(is_even(0)).to eq(false)
+  it 'returns false if (n) is zero' do
+      expect(is_even(0)).to eq(false)
+  end
+
+  it 'returns false if (n) is zero' do
+    expect(is_even(-1)).to eq(false)
 end
+
 
 end
 
