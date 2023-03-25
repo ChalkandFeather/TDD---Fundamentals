@@ -28,8 +28,12 @@ end
   end
 
   it 'returns false if (n) is zero' do
-    expect(is_even(-1)).to eq(false)
+      expect(is_even(-1)).to eq(false)
 end
+
+  it 'returns false if (n) is zero' do
+    expect(is_even(-2)).to eq(true)
+  end
 
 
 end
