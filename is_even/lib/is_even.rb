@@ -1,3 +1,3 @@
-def is_even()
-return ()
+def is_even(n)
+return n
 end
