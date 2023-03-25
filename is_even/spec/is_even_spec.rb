@@ -27,14 +27,17 @@ end
       expect(is_even(0)).to eq(false)
   end
 
-  it 'returns false if (n) is zero' do
+  it 'returns false if (n) negative odd' do
       expect(is_even(-1)).to eq(false)
 end
 
-  it 'returns false if (n) is zero' do
+  it 'returns true if (n) negative even' do
     expect(is_even(-2)).to eq(true)
   end
 
+  it 'returns true if (n) negative even' do
+    expect(is_even(-2.0)).to eq(true)
+  end
 
 end
 
