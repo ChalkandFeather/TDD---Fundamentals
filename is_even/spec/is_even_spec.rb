@@ -19,7 +19,11 @@ RSpec.describe 'is_even' do
     it 'returns true if (n) is even with floating point set to zero ' do
       expect(is_even(2.0)).to eq(true)
     end
+
+    it 'returns false if (n) floating point is higher than zero' do
+      expect(is_even(2.1)).to eq(false)
   end
+end
 
 
 
